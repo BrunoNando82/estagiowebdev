@@ -16,46 +16,76 @@
     align-items:center;
     width:90%;
 }
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .logo img{
-    width:137px;
-    height:39px;
+    width:143px;
+    height:42px;
+}
+.menu{
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    height:100%;
+    padding-bottom:3px;
 }
 .menu ul{
     display:flex;
+    align-items:center;
     list-style:none;
     color:#fff;
+    font-size:16px;
 }
 
 .menu ul li{
     margin-right:45px;
     font-weight:bold;
+    text-align:center;
+    height: 4.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #000;
 }
 .menu li:hover{
     cursor:pointer;
+    border-bottom:3px solid #fff;
 }
-span{
-    width:50px;
-}
-.dif{
-    display:flex;
+.dif ul{
     color:#d9dadc;
     margin-right:-40px;
 }
-
-.container{
+.dif ul li{
+    height: 4.4rem;
+}
+.container,
+.container_2{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:90vh;
+    height:100vh;
     background-color:#993399;
 }
-.c_body{
+.container_2{
+    background-color:#2941ab;
+    background-image:url("../img/bg.png");
+    background-position:right;
+    background-size:cover;
+}
+.c_body,
+.c_body_2{
     display:flex;
     justify-content:space-between;
     align-items:center;
     width:90%;
     height:420px;
     color:#fff;
+}
+.c_body_2{
+    color:#1ed760;
 }
 .left{
     width:100%;
@@ -65,21 +95,27 @@ span{
     font-weight:bold;
     font-size:13px;
     margin-bottom:45px;
+    text-transform:uppercase;
 }
 .title_1{
     margin-bottom:23px;
-    font-size:51px;
+    font-size:56px;
     font-weight:bold;
-    line-height:56px;
+    line-height:63px;
 }
 .description, 
 .description2{
     font-size:21px;
 }
+.description_2{
+    font-size:26px;
+    width:35rem;
+}
 .description2{
     margin-top:5px;
 }
-button{
+button,
+.b2{
     width:226px;
     height:43px;
     background-color:#000;
@@ -92,8 +128,18 @@ button{
     cursor:pointer;
     transition:all 1s linear;
 }
+.b2{
+    color:#2941ab;
+    background-color:#1ed760;
+    border:0;
+}
+.b2:hover{
+    border:2px solid #1ed760;
+    background-color:#2941ab;
+    color:#1ed760;
+}
 button:hover{
-    border:1px solid #fff;
+    border:2px solid #fff;
     background-color:#fff;
     color:#993399;
     transition:all 1s linear;
@@ -113,8 +159,10 @@ button:hover{
     display:flex;
     align-items:center;
     justify-content:center;
-    width:100%;
     height:inherit;
+}
+.right_2{
+    border:1px solid #000
 }
 .right img{
     width:483px;
